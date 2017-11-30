@@ -41,6 +41,7 @@ describe 'app' do
            'name' => 'rabbitmq-cups-vip',
            'label' => 'user-provided',
            'plan' => 'default',
+           'tags' => [],
            'credentials' => {
              'uri'  => RABBITMQ.uri
            }
