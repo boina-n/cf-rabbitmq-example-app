@@ -38,12 +38,8 @@ describe 'app' do
     before do
       ENV["VCAP_SERVICES"] ||= {
         'rabbitmq' => [{
-           'name' => 'rabbitmq',
-           'label' => 'rabbitmq',
-           'tags' => [
-              'rabbitmq',
-              'pivotal'
-           ],
+           'name' => 'rabbitmq-cups-vip',
+           'label' => 'user-provided',
            'plan' => 'default',
            'credentials' => {
              'uri'  => RABBITMQ.uri
